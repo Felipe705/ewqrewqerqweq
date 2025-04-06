@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/1371494/assets/images/photo-1559717865-a99cac1c95d8.jpeg" type="image/x-icon">
+  <meta name="description" content="Planejamento de rotas de viagem com um chatbot de IA que personaliza a experiência, sugerindo paradas, restaurantes e hotéis para uma viagem única.">
+  <title>Planeje Suas Viagens com Chatbot de IA Personalizado</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/bootstrap/css/bootstrap.min.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/parallax/jarallax.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/dropdown/css/style.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/socicon/css/styles.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/theme/css/style.css?rnd=1743958798656">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/recaptcha.css?rnd=1743958798656">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1371494/assets/css/mbr-additional.css?rnd=1743958798657" type="text/css">
+  
+  
+  <link rel="stylesheet" href="style.css">
+  
+  
+  
+
+</head>
+<body>
+<!-- <div class="container-banner" id="mobirisePromo">
+  <div class="banner align-center">
+    <button type="button" onclick="document.getElementById('mobirisePromo').classList.add('container-banner-closing')" class="btn-close" aria-label="Close" style="position: fixed;top: 16px;right: 16px;"></button>
+    <p class="mbr-text mbr-fonts-style display-7">The site was made with <a href="https://mobirise.com/builder/ai-website-builder.html" class="">Free AI Website Builder</a></p>
+    <div class="mbr-section-btn">
+      <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com/p/">Get AI Kit!</a>
+      <a class="btn btn-sm btn-secondary display-4" href="https://my.mobirise.com/buy.php?p=126&u=3917291&st=1371494&dm=1371494.mobirisesite.com">Remove This Banner</a>
+    </div>
+    <div class="mbr-section-abuse-report">
+      <a href="mailto:support@mobirise.com?subject=Mobirise Abuse Report 1371494.mobirisesite.com">Report abuse</a>
+    </div>
+  </div>
+</div>
+   -->
+  <section data-bs-version="5.1" class="menu menu2 cid-uHy2hgcPd3" once="menu" id="menu-5-uHy2hgcPd3">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/1371494/assets/images/photo-1559717865-a99cac1c95d8.jpeg" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Rota</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="#">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="#" aria-expanded="false">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="#">Contato</a>
+					</li>
+				</ul>
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#">Comece Agora</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-uHy2hgdP3q mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=3XB9U5ChFg0&amp;t=1s" id="hero-15-uHy2hgdP3q">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12, flex-direction: row; gap: 10% ;">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1" style="display: flex; ">
+          
+          <strong style="position: relative; top: 80px;">Para onde vamos viagar hoje?</strong>
+          <img src="./img/background/teo cel sem fundo.png" style="width: 200px;  left: 80%;">
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Transforme suas viagens com nosso chatbot inteligente e personalizado!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="#">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header14 cid-uHy2hgdgLr mbr-parallax-background" id="call-to-action-9-uHy2hgdgLr">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="card col-12 col-md-12 col-lg-10">
+				<div class="card-wrapper">
+					<div class="card-box align-center">
+						<h1 class="card-title mbr-fonts-style mb-4 display-1">
+							<strong>Personalize Sua Experiência Agora</strong>
+						</h1>
+						<p class="mbr-text mbr-fonts-style mb-4 display-7">Deixe nosso chatbot guiá-lo em cada parada!</p>
+						<div class="mbr-section-btn mt-4">
+                            <button class="btn btn-primary display-7" id="iniciar" ">Iniciar Chat</button>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="video04 cid-uHy2hgee6C" id="video-6-uHy2hgee6C">
+  
+  
+  <div class="container">
+    <div class="mbr-section-head mb-5">
+      <h4 class="mbr-section-title mbr-fonts-style mb-0 mt-0 display-2">
+        <strong>Destinos Imperdíveis Aqui</strong>
+      </h4>
+      
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 video-block">
+        <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/3XB9U5ChFg0?rel=0&amp;amp;mute=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=3XB9U5ChFg0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people03 cid-uHy2hgqHTP" id="team-1-uHy2hgqHTP">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Nossa Equipe</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="img\equipe\keven.png" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Keven</strong></h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Ciências da Computação</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="img\equipe\israel.png" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Israel</strong></h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Psicologia</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="img\equipe\felipe.png" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Felipe</strong></h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Ciências da Computação</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                       <img src="img\equipe\roger.png " alt="" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Roger</strong></h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Administração</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article15 cid-uHy2hgrl2V" id="about-me-15-uHy2hgrl2V">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md">
+                
+                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5">
+                    <strong>Planeje sua viagem com um assistente inteligente e personalizado!</strong>
+                </h6>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <p class="mbr-text mbr-fonts-style display-7">Você já sonhou em ter um assistente de viagem que realmente entende suas necessidades? Chegou a hora de transformar esse sonho em realidade! Com nosso chatbot de IA, suas rotas de viagem nunca mais serão as mesmas. Ele faz perguntas inteligentes e sugere paradas incríveis, restaurantes de dar água na boca e hotéis que são verdadeiros refúgios!</p>
+                <p class="mbr-text mbr-fonts-style display-7">Se você está pensando em uma escapada para a praia, por que não parar em um lugar que serve os melhores petiscos do litoral? Ou quem sabe um hotel com vista para o mar que vai fazer você se sentir um verdadeiro VIP? Com nosso assistente, cada viagem é uma nova aventura, cheia de surpresas e delícias!</p>
+                <p class="mbr-text mbr-fonts-style display-7">Não perca tempo com planejamentos chatos e sem graça. Deixe que a tecnologia trabalhe para você e aproveite cada momento da sua viagem! Prepare-se para uma experiência que vai muito além do comum!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="people04 cid-uHy2hgrJOU" id="testimonials-4-uHy2hgrJOU">
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Opiniões</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">O chatbot fez minha viagem ser muito mais divertida!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/1371494/assets/images/photo-1676385901160-31e1b9e1c0c7.jpeg" data-slide-to="0" data-bs-slide-to="0" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Maria Silva</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">As sugestões de paradas foram incríveis!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/1371494/assets/images/photo-1586185018558-ea8f4b4c514f.jpeg" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Carlos Oliveira</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Nunca mais planejo uma viagem sem esse assistente!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/1371494/assets/images/photo-1681075401974-907cc62a4373.jpeg" data-slide-to="5" data-bs-slide-to="5" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Ana Costa</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="features10 cid-uHy2hgrXhm" id="metrics-2-uHy2hgrXhm">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>1000+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Rotas personalizadas</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>500+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Restaurantes recomendados</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>300+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Hotéis incríveis</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery4 cid-uHy2hgsP65" id="gallery-12-uHy2hgsP65">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-1" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1436491865332-7a61a109cc05.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1503457574462-bd27054394c1.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="./img/background/GONDOLA-LUCILLE-FOTO-DE-JESSICA-AQUINO.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="./img/background/canion-laranjeiras.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid-container-2" style="transform: translate3d(-70px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1530521954074-e64f6810b32d.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="img/background/canion-laranjeiras.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="./img/background/cri.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="./img/background/Gravatal-Termas-Hotel.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people03 cid-uHy2hgv7Tu" id="guests-1-uHy2hgv7Tu">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Nossos Clientes Satisfeitos</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1525614686090-7a3108e3758e.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Maria Silva</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Designer Gráfico</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1596646285603-e5f9bbfa524a.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Carlos Oliveira</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Engenheiro Civil</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1644945570917-1585f682efaa.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Ana Costa</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Professora Universitária</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                       <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1535026406642-530e01750ad7.jpeg" alt="" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>João Pereira</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Médico Veterinário</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features03 cid-uHy2hgBWOt" id="news-1-uHy2hgBWOt">
+  
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Novidades de Viagem</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item features-image col-12 col-md-6 col-lg-3 active">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="./img/background/tubarao.jpeg" alt="" title="">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+              <strong>Planeje Sua Próxima Aventura</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-04-06</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Descubra como nosso chatbot de IA transforma suas viagens em experiências personalizadas e inesquecíveis!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Saiba</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="./img/background/cocal do sul.jpeg" alt="" title="" data-slide-to="1" data-bs-slide-to="1">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Dicas de Paradas Imperdíveis</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-04-06</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Saiba onde parar durante sua viagem e aproveite ao máximo cada momento!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Saiba</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <!-- <img src="./img/background/download.jpeg" alt="" title="" data-slide-to="2" data-bs-slide-to="2"> -->
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Restaurantes que Você Vai Amar</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-04-06</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Nossos algoritmos recomendam os melhores lugares para comer, porque você merece o melhor!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Saiba</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="https://r.mobirisesite.com/1371494/assets/images/photo-1488085061387-422e29b40080.jpeg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Hospedagens Incríveis para Você</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-04-06</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Encontre hotéis que combinam conforto e estilo, tudo ao seu alcance!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Saiba</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image02 cid-uHy2hgBIiy mbr-fullscreen mbr-parallax-background" id="image-13-uHy2hgBIiy">
+    
+    
+    <div class="container">
+        
+        <div class="row"></div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-uHy2hgBeYg mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=3XB9U5ChFg0&amp;t=1s" id="video-5-uHy2hgBeYg">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-uHy2hgByfb" id="features-69-uHy2hgByfb">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Chatbot de IA para personalização de viagens * Sugestões de paradas e restaurantes incríveis * " data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Chatbot de IA para personalização de viagens * Sugestões de paradas e restaurantes incríveis * " data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="list1 cid-uHy2hgDTrW" id="faq-1-uHy2hgDTrW">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10 m-auto">
+                <div class="content">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 content-head">
+                            <div class="mbr-section-head">
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                    <strong>Perguntas Frequentes</strong>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bootstrap-accordion_14" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_14" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Como funciona o chatbot de IA?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_14" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_14">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Nosso chatbot interage com você para entender suas preferências e sugerir paradas e atividades personalizadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_14" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Posso planejar viagens em grupo?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_14" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_14">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Sim! O chatbot pode ajudar a coordenar planos para grupos, garantindo que todos se divirtam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_14" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Quais tipos de paradas posso escolher?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_14" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_14">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Você pode escolher paradas para alimentação, descanso, turismo e muito mais!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_14" aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">O serviço é gratuito?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_14" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_14">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Sim, o uso do chatbot e das sugestões é totalmente gratuito!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_14" aria-expanded="false" aria-controls="collapse5">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Como posso dar feedback?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_14" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_14">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Adoramos ouvir você! Use nosso formulário de feedback para compartilhar suas experiências.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-uHy2hgEA6N" id="follow-us-1-uHy2hgEA6N">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Siga-nos nas Redes Sociais</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-uHy2hgEbuh" id="contact-form-2-uHy2hgEbuh">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Entre em Contato</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="ETpCgMECdFFO5Nfyw4DL84qmmbywcwQaHo5XAnf+kQgNk8TE/HLGoROQE9TrcbsBozxjQIf9lKL4CFUqWECA1B3x7flsYuKHgkE+dy35rE0cVIwznIIt0pl13WRCeRVa">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Nome" data-form-field="name" class="form-control" value="" id="name-contact-form-2-uHy2hgEbuh">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-uHy2hgEbuh">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Mensagem" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-uHy2hgEbuh"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts03 cid-uHy2hgEwW9" id="contacts-11-uHy2hgEwW9">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Nossos Contatos</strong>
+          </h5>
+          <p class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Telefone: (11) 1234-5678
+            <br>Planeje Suas Viagens com Chatbot de IA Personalizado: contato@viageminteligente.com
+            <br>Planeje Suas Viagens com Chatbot de IA Personalizado: Rua das Viagens, 123
+            <br>Horário de Funcionamento: Seg a Sex: 9h - 18h
+          </p> 
+
+          
+        </div>
+      </div>
+        <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-uHy2hgMzGL" once="footers" id="footer-3-uHy2hgMzGL">
+
+        
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="row-links">
+                <ul class="header-menu">
+                  
+                  
+                  
+                  
+                <li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Sobre</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Serviços</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Blog</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Contato</a>
+                  </li></ul>
+              </div>
+
+            <div class="col-12 mt-4">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-facebook display-7"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-twitter socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-linkedin"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-twitch"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <p class="mbr-fonts-style copyright display-7">© 2025 Viagem Inteligente. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Botão do balão -->
+<button id="chat-button">💬</button>
+
+<!-- Overlay -->
+<div id="overlay"></div>
+
+<!-- Modal do chatbot -->
+<div id="chat-modal" >
+  <!-- <img src="./img/background/teo-passaporte-removebg-preview.png" alt=""> -->
+  <header>Teo, seu guia amigo</header>
+  <div class="chat-body">
+    <p>👋 Olá! Como posso ajudar você hoje?</p>
+    
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="chat-input" placeholder="Digite sua mensagem..." />
+    <input type="button" class="send" onclick="sendMessage()" id="enviado" value="Enviar"/>
+  </div>
+</div>
+
+
+<script src="https://r.mobirisesite.com/1371494/assets/web/assets/jquery/jquery.min.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/parallax/jarallax.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/smoothscroll/smooth-scroll.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/ytplayer/index.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/dropdown/js/navbar-dropdown.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/vimeoplayer/player.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/masonry/masonry.pkgd.min.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/imagesloaded/imagesloaded.pkgd.min.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/scrollgallery/scroll-gallery.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/mbr-switch-arrow/mbr-switch-arrow.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/theme/js/script.js?rnd=1743941347165"></script>
+<script src="https://r.mobirisesite.com/1371494/assets/formoid.min.js?rnd=1743941347165"></script>
+  <script src="script.js"></script>
+  
+  
+
+</body>
+</html>
