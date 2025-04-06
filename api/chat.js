@@ -8,7 +8,7 @@ const OPENAI_API_KEY="sk-proj-l02tVCT2qQ6gs7Vuc7Grg029zKhkBkz9acj0-hFp0GOkET1Gla
 const router = express.Router();
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
 
 router.post("/chat", async (req, res) => {
