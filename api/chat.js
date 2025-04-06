@@ -4,7 +4,7 @@ import express from "express";
 import OpenAI from "openai";
 import dotenv from "dotenv";
 dotenv.config();
-const OPENAI_API_KEY=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
+const OPENAI_API_KEY="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"
 const router = express.Router();
 
 const openai = new OpenAI({
@@ -40,5 +40,8 @@ router.post("/chat", async (req, res) => {
     res.status(500).json({ reply:+ " Deu ruim aqui 😅 Tenta de novo depois!" });
   }
 });
-
+module.exports = (req, res) => {
+  res.status(200).json({ message: "Olá do Vercel!" });
+};
 export default router;
+
